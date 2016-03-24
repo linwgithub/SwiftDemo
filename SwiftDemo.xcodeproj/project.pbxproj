@@ -88,6 +88,8 @@
 		7AC06BF71CA263F50041057B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = microi;
 				TargetAttributes = {
@@ -236,6 +238,7 @@
 				7AC06C081CA263F60041057B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

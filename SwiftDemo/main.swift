@@ -8,5 +8,17 @@
 
 import Foundation
 
-println("Hello, World!")
+print("Hello, World!")
 
+//声明变量
+var my = 42
+my = 41
+//声明常量
+let he = 13
+
+print("\(my)")
+
+let partA = "hello"
+let partB = 14
+let total = partA + String(partB)
+print(total)
