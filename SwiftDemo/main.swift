@@ -16,7 +16,10 @@ my = 41
 //声明常量
 let he = 13
 
-print("\(my)")
+//声明一个float
+let myfloat : Float = 4
+
+print("other value turn to string \(my) and " + String(myfloat))
 
 let partA = "hello"
 let partB = 14
@@ -93,3 +96,21 @@ let bigsmil = "bbbsssmmm"
 
 print(bigsmil.uppercaseString)
 print(bigsmil.lowercaseString)
+
+
+var optionalString : String? = "hello"
+print(optionalString == nil)//判断是否没有值
+
+//可选类型取值的两种方法
+//1 使用if let 判断值
+var optionalName : String? = nil//"jack"
+var gettingName = "Hello"
+if let name = optionalName{
+    gettingName = "Hello, \(name)"
+}else{
+    gettingName = "Hello, user" 
+}
+print(gettingName)
+//2 提供默认值
+let newName = optionalName ?? "new User"
+print(newName)
