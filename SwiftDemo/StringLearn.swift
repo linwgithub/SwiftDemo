@@ -11,9 +11,8 @@ import Foundation
 
 class StringLearn: NSObject {
 
-    
-//    func StringUse(){
-//    }
-    
-    
+    var stringOfStringLearn = "simple"
+    func StringLearnDescript() -> String{
+        return "string of StringLearn : " + stringOfStringLearn
+    }
 }

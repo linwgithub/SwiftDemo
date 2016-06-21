@@ -108,7 +108,7 @@ var gettingName = "Hello"
 if let name = optionalName{
     gettingName = "Hello, \(name)"
 }else{
-    gettingName = "Hello, user" 
+    gettingName = "Hello, user"
 }
 print(gettingName)
 //2 提供默认值
@@ -160,6 +160,7 @@ for i in 0 ..< 4 {
 }
 print("\(totals)")
 
+//函数
 func subNumber(sorces : [Int]) -> (max : Int, min : Int, sum : Int){
     var max = sorces[0]
     var min = sorces[0]
@@ -180,4 +181,56 @@ let numberSubResult = subNumber([1,2,3,4,5,6,7])
 print("\(numberSubResult.sum)")
 print("\(numberSubResult.max)")
 print("\(numberSubResult.min)")
+
+//函数嵌套&函数传参
+func returnAddNum(numberA : Int,numberB : Int) -> Int{
+    var numberC = 0;
+    func addNumber(){
+        numberC = numberA + numberB;
+    }
+    addNumber()
+    return numberC
+}
+
+let resultNumber = returnAddNum(returnAddNum(1, numberB: 2), numberB: 3)
+
+print("\(resultNumber)")
+
+/// 闭包
+var numbers = [20, 19, 7, 12]
+
+//数组成员×3
+let mappedNumbers = numbers.map({ number in 3 * number })
+print(mappedNumbers)
+
+//数组成员奇数返回1 偶数返回0
+let mapedNumbers2 = numbers.map({
+    (number : Int) -> Int in
+    if (number % 2 == 1){
+        return 1
+    }else{
+        return 0
+    }
+})
+print(mapedNumbers2)
+
+/// 对象&类
+//创建一个类
+class Shape{
+    var numbersForside = 0;
+    func simpleDescription() -> String{
+        return "simple with number : \(numbersForside)"
+    }
+}
+
+//创建一个类的对象，点语法来调用类的属性和方法
+var shape = Shape()
+shape.numbersForside = 7;
+print(shape.simpleDescription())
+
+//外部类
+var myString = StringLearn()
+myString.stringOfStringLearn = "user SImple"
+print(myString.StringLearnDescript())
+
 
