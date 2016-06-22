@@ -181,3 +181,7 @@ print("\(numberSubResult.sum)")
 print("\(numberSubResult.max)")
 print("\(numberSubResult.min)")
 
+//重写父类方法
+var stringSubClass = StringLearnSub()
+stringSubClass.firstStringOf = "new one"
+print(stringSubClass.firstString())
