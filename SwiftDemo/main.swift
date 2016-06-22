@@ -207,5 +207,9 @@ print(newTuples.1)//通过下表检索访问
 let (newStatus, newMessage) = (200, "success")//直接命名
 print(newMessage)
 
-
-
+//可选类型
+var serverResponseCode: Int? = 404
+// serverResponseCode 包含一个可选的 Int 值 404
+//serverResponseCode = nil
+// serverResponseCode 现在不包含值
+print(serverResponseCode)
