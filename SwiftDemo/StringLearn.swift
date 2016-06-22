@@ -28,4 +28,9 @@ class StringLearn{
         self.stringOfStringLearn = "init Simple"
     }
     
+    var firstStringOf = "first"
+    func firstString() -> String{
+    return "first"
+    }
+    
 }
