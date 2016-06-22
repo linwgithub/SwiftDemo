@@ -108,7 +108,7 @@ var gettingName = "Hello"
 if let name = optionalName{
     gettingName = "Hello, \(name)"
 }else{
-    gettingName = "Hello, user" 
+    gettingName = "Hello, user"
 }
 print(gettingName)
 //2 提供默认值
@@ -185,3 +185,27 @@ print("\(numberSubResult.min)")
 var stringSubClass = StringLearnSub()
 stringSubClass.firstStringOf = "new one"
 print(stringSubClass.firstString())
+
+let maxUInt32 = UInt32.max
+print(" \(maxUInt32)")
+
+//类型别名
+typealias AutoMyInt = UInt
+var myautoInt1 : AutoMyInt
+myautoInt1 = 2
+print("myAutoInt1 : \(myautoInt1)")
+
+///元组
+let http404Error = (404, "not found", "url error")
+let (status, message, _) = http404Error
+print(message)
+
+let newTuples = (mytuples1 : 200, mytuples2 : "success")//定义是命名
+print(newTuples.mytuples1)//通过元组的元素名访问
+print(newTuples.1)//通过下表检索访问
+
+let (newStatus, newMessage) = (200, "success")//直接命名
+print(newMessage)
+
+
+
