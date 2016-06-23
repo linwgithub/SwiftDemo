@@ -332,3 +332,15 @@ for element in myIntSet2.sort(){
     print(element)
 }
 
+//字典
+var myNewDictionary = Dictionary<Int, String>()
+var myNewDictionary1 = [Int: String]()
+//用字典字面量创建字典
+var myNewDictionary2 = [1 : "one", 2 :"teo", 3 : "there"]
+print(myNewDictionary2)
+
+myNewDictionary2.count//字典数量
+myNewDictionary2.isEmpty//是否为空
+myNewDictionary2[2] = "times"
+myNewDictionary2.updateValue("time 3", forKey: 3)//返回可选类型
+print(myNewDictionary2)
