@@ -305,3 +305,30 @@ for myInt in myIntArray {
 for (index, value) in myIntArray.enumerate(){
     print("MyIntArray index : \(index) ; and value : \(value)")
 }
+
+///集合
+var myIntSet = Set<Int>()
+var myIntSet2 : Set<Int> = [12,34,56]//使用数组字面量创建
+//myIntSet2 = []//置为空
+myIntSet.insert(78)
+myIntSet.count//集合数量
+myIntSet.isEmpty//集合是否为空
+myIntSet.insert(90)//插入
+//移除：存在则移除，并返回移除的元素，不存在则返回nil
+var emptyRemoveInt = myIntSet.remove(35)
+print(emptyRemoveInt)
+myIntSet.insert(46)
+var entityRemoveInt = myIntSet.remove(46)
+print(entityRemoveInt)
+//检查元素是否存在,返回boolean
+myIntSet.insert(10)
+print(myIntSet.contains(10))
+//遍历
+for element in myIntSet2{
+    print(element)
+}
+//有序化后遍历
+for element in myIntSet2.sort(){
+    print(element)
+}
+
