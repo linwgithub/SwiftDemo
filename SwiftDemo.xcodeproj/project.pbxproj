@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7A48E2291D1A279700AE56EE /* StringLearnSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48E2281D1A279700AE56EE /* StringLearnSub.swift */; };
 		7A5C54311CAE4020007EF6A7 /* StringLearn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C54301CAE4020007EF6A7 /* StringLearn.swift */; };
+		7A715B7D1D1B7CB0004652FF /* ThroesErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A715B7C1D1B7CB0004652FF /* ThroesErrors.swift */; };
 		7AC06C031CA263F60041057B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC06C021CA263F60041057B /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		7A48E2281D1A279700AE56EE /* StringLearnSub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLearnSub.swift; sourceTree = "<group>"; };
 		7A5C54301CAE4020007EF6A7 /* StringLearn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLearn.swift; sourceTree = "<group>"; };
+		7A715B7C1D1B7CB0004652FF /* ThroesErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThroesErrors.swift; sourceTree = "<group>"; };
 		7AC06BFF1CA263F60041057B /* SwiftDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC06C021CA263F60041057B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +66,7 @@
 				7AC06C021CA263F60041057B /* main.swift */,
 				7A5C54301CAE4020007EF6A7 /* StringLearn.swift */,
 				7A48E2281D1A279700AE56EE /* StringLearnSub.swift */,
+				7A715B7C1D1B7CB0004652FF /* ThroesErrors.swift */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 				7AC06C031CA263F60041057B /* main.swift in Sources */,
 				7A48E2291D1A279700AE56EE /* StringLearnSub.swift in Sources */,
 				7A5C54311CAE4020007EF6A7 /* StringLearn.swift in Sources */,
+				7A715B7D1D1B7CB0004652FF /* ThroesErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

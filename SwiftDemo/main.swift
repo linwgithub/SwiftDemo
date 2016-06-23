@@ -264,5 +264,29 @@ var serverResponseCode: Int? = 404
 // serverResponseCode 包含一个可选的 Int 值 404
 //serverResponseCode = nil
 // serverResponseCode 现在不包含值
-print(serverResponseCode)
+print(serverResponseCode!)//解包取值
+
+//可选绑定
+let possibleNumber = "1hh23"
+if let actualNumber = Int(possibleNumber) {
+    print("\'\(possibleNumber)\' has an integer value of \(actualNumber)")
+} else {
+    print("\'\(possibleNumber)\' could not be converted to an integer")
+}
+
+//普通可选类型和隐式解析可选类型
+let possibleString: String? = "An optional string."
+let forcedString: String = possibleString! // 需要惊叹号来获取值
+
+let assumedString: String! = "An implicitly unwrapped optional string."
+let implicitString: String = assumedString  // 不需要感叹号
+
+print(implicitString)
+//
+//var errorTest = LearnThrowError()
+//errorTest.takeAnStringrror()
+
+//let age = -3
+//assert(age >= 0, "A person's age cannot be less than zero")
+// 因为 age < 0，所以断言会触发
 
