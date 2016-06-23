@@ -290,3 +290,18 @@ print(implicitString)
 //assert(age >= 0, "A person's age cannot be less than zero")
 // 因为 age < 0，所以断言会触发
 
+///数组
+var myIntArray = [Int]()
+myIntArray += [12,34]
+myIntArray.append(56)
+myIntArray[2] = 78
+myIntArray.insert(90, atIndex: 0)
+myIntArray.removeAtIndex(1)
+print("myIntArray : \(myIntArray)")
+for myInt in myIntArray {
+    print("element of MyIntArray : \(myInt)")
+}
+
+for (index, value) in myIntArray.enumerate(){
+    print("MyIntArray index : \(index) ; and value : \(value)")
+}
