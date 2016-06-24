@@ -339,8 +339,35 @@ var myNewDictionary1 = [Int: String]()
 var myNewDictionary2 = [1 : "one", 2 :"teo", 3 : "there"]
 print(myNewDictionary2)
 
+///访问和修改
 myNewDictionary2.count//字典数量
 myNewDictionary2.isEmpty//是否为空
 myNewDictionary2[2] = "times"
+myNewDictionary2[4] = "four"//通过添加新的下标添加新的数据
 myNewDictionary2.updateValue("time 3", forKey: 3)//返回可选类型
 print(myNewDictionary2)
+myNewDictionary2.removeValueForKey(4)//移除元素
+myNewDictionary2[3] = nil//通过设置值为nil来移除该元素
+print(myNewDictionary2)
+
+///遍历
+//普通遍历，获取键值
+for (index , value) in myNewDictionary2{
+    print("value of index \(index) is : " + value)
+}
+
+//只获取键值
+for index in myNewDictionary2.keys{
+    print("keys od myNewDictionary \(index)")
+}
+//只获取值
+for value in myNewDictionary2.values{
+    print("value of myNewDictionary " + value)
+}
+//抽取字典的键或值形成新的数组
+let getValueArray = myNewDictionary2.values.sort()//字典默认无序，使用sort使其有序化
+print(getValueArray)
+let getkeysArray = (myNewDictionary2.keys).sort()
+print(getkeysArray)
+
+
